@@ -9,4 +9,5 @@ Currently, two official plugins are available:
 
 To-do list:
 1. Try hosting the entire project on AWS
-2. Host Unity Builds with CDN(e.g. AWS S3) and reduce project size
+2. Host Unity Builds with CDN(e.g. AWS S3) and reduce project size, then deploy website publicly
+3.  build a backend for the website so that we can update links and resources?

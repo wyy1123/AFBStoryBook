@@ -4,17 +4,20 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 
 function Chapter2() {
-  const { unityProvider } = useUnityContext({
-    loaderUrl: "../../public/AliceChapter2/Build/AliceChapter2.loader.js",
-    dataUrl: "../../public/AliceChapter2/Build/AliceChapter2.data.br",
-    frameworkUrl: "../../public/AliceChapter2/Build/AliceChapter2.framework.js.br",
-    codeUrl: "../../public/AliceChapter2/Build/AliceChapter2.wasm.br",
-  })
+
   return (
     <>
-    <h1> Chapter 2: Alice in the magical hallway</h1>
-    <Unity  unityProvider={unityProvider} />
 
+    <h1> Chapter 2: Alice in the magical hallway</h1>
+
+    <iframe src ="https://mybucket1123.s3.us-east-2.amazonaws.com/AliceChapter2/index.html" 
+    overflow:hidden
+    width ="100%"
+    height = "680px"
+    allowfullscreen="true"
+    >
+
+    </iframe>
     </>
 
   )
