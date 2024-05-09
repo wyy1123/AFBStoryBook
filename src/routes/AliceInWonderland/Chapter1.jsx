@@ -4,17 +4,19 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 
 function Chapter1() {
-  const { unityProvider } = useUnityContext({
-    loaderUrl: "../../public/AliceChapter1/Build/AliceChapter1.loader.js",
-    dataUrl: "../../public/AliceChapter1/Build/AliceChapter1.data.br",
-    frameworkUrl: "../../public/AliceChapter1/Build/AliceChapter1.framework.js.br",
-    codeUrl: "../../public/AliceChapter1/Build/AliceChapter1.wasm.br",
-  })
+
   return (
     <>
     <h1> Chapter 1: Alice Enters the Wonderland</h1>
     
-    <Unity  unityProvider={unityProvider} />
+    <iframe src ="https://mybucket1123.s3.us-east-2.amazonaws.com/AliceChapter1/index.html" 
+    overflow:hidden
+    width ="100%"
+    height = "680px"
+    allowfullscreen="true"
+    >
+
+    </iframe>
 
     </>
 
